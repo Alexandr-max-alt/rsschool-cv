@@ -95,7 +95,7 @@ body {
 }
 
 [class*=__subcontainer] {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -178,7 +178,7 @@ a:hover {
   background-color: #828282;
 }
 .body-main__img img {
-  max-width: 160px;
+  max-width: 140px;
   border-radius: 50%;
 }
 .body-main__item {
