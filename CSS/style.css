@@ -152,9 +152,15 @@ a:hover {
 }
 
 .main {
+  height: 100%;
   background-color: #F6F6F6;
   padding: 50px 0;
 }
+.main__body {
+  -webkit-box-shadow: 0px 0px 100px rgb(214, 251, 251);
+          box-shadow: 0px 0px 100px rgb(214, 251, 251);
+}
+
 .body-main__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +191,7 @@ a:hover {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .body-main__items {
   display: -webkit-box;
@@ -227,10 +233,121 @@ a:hover {
           transform: scale(1.1);
 }
 
+.contacts__email {
+  padding-left: 25px;
+  position: relative;
+}
+.contacts__email::after {
+  background-image: url(../img/icon_email.png);
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.contacts__github {
+  padding-left: 25px;
+  position: relative;
+}
+.contacts__github::after {
+  background-image: url(../img/icon_git.png);
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.contacts__telegram {
+  padding-left: 25px;
+  position: relative;
+}
+.contacts__telegram::after {
+  background-image: url(../img/icon_tel.png);
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.contacts__discord {
+  padding-left: 25px;
+  position: relative;
+}
+.contacts__discord::after {
+  background-image: url(../img/icon_discord.png);
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+
+.skills__list li {
+  position: relative;
+  padding-left: 15px;
+}
+.skills__list li::after {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 30%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: #070707;
+}
+
+.english__list li {
+  position: relative;
+  padding-left: 15px;
+}
+.english__list li::after {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 30%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: #070707;
+}
+
+.projects__list li {
+  font-size: 20px;
+  position: relative;
+  padding-left: 15px;
+}
+.projects__list li::after {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 30%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: #070707;
+}
+
 .fooler {
   padding: 30px 0;
 }
 
+.footer {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,9 +360,26 @@ a:hover {
           justify-content: space-between;
 }
 .footer__logo {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   width: 80px;
 }
+.footer__logo:hover {
+  text-decoration: line-through;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 .footer__logo img {
+  max-width: 100%;
+  height: auto;
+}
+.footer__mygithub {
+  max-width: 100px;
+  max-height: 100px;
+}
+.footer__mygithub img {
   max-width: 100%;
   height: auto;
 }
