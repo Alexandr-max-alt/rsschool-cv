@@ -40,7 +40,7 @@ body {
 }
 
 [class*='__subcontainer'] {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -103,9 +103,11 @@ a {
 //-----------------------------------------MAIN--------------------------------//
 
 .main {
+    height: 100%;
     background-color: #F6F6F6;
     padding: 50px 0;
     &__body {
+        box-shadow: 0px 0px 100px rgb(214, 251, 251);
     }
 }
 .body-main {
@@ -129,14 +131,14 @@ a {
 
     &__img {
         img {
-            max-width: 140px;
+            max-width: 160px;
             border-radius: 50%;
         }
     }
 
     &__item {
         flex: 50%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     &__items {
         display: flex;
@@ -172,6 +174,145 @@ a {
     }
 }
 
+.contacts {
+
+		&__list {
+           
+		}
+
+		&__email {
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                background-image: url(../img/icon_email.png);
+                width: 16px;
+                height: 16px;
+                top: 0;
+                left: 0;
+                position: absolute;
+                content:'';
+                background-size: 16px 16px;
+                background-repeat: no-repeat; 
+                
+            }
+             
+		}
+
+		&__github {
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                background-image: url(../img/icon_git.png);
+                width: 16px;
+                height: 16px;
+                top: 0;
+                left: 0;
+                position: absolute;
+                content:'';
+                background-size: 16px 16px;
+                background-repeat: no-repeat; 
+                
+            }
+            
+		}
+
+		&__telegram {
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                background-image: url(../img/icon_tel.png);
+                width: 16px;
+                height: 16px;
+                top: 0;
+                left: 0;
+                position: absolute;
+                content:'';
+                background-size: 16px 16px;
+                background-repeat: no-repeat; 
+                
+            }
+		}
+
+		&__discord {
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                background-image: url(../img/icon_discord.png);
+                width: 16px;
+                height: 16px;
+                top: 0;
+                left: 0;
+                position: absolute;
+                content:'';
+                background-size: 16px 16px;
+                background-repeat: no-repeat; 
+                
+            }
+		}
+}
+
+.skills {
+    &__list {
+       li {
+        position: relative;
+        padding-left: 15px;
+        &::after {
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            top: 30%;
+            left: 0;
+            position: absolute;
+            content:'';
+            background-color: #070707;
+            
+        }
+       } 
+    }
+}
+
+.english {
+    &__list {
+       li {
+        position: relative;
+        padding-left: 15px;
+        &::after {
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            top: 30%;
+            left: 0;
+            position: absolute;
+            content:'';
+            background-color: #070707;
+            
+        }
+       } 
+    }
+}
+
+.projects {
+    &__list {
+       li {
+        font-size: 20px;
+        position: relative;
+        padding-left: 15px;
+        &::after {
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            top: 30%;
+            left: 0;
+            position: absolute;
+            content:'';
+            background-color: #070707;
+            
+        }
+       } 
+    }
+}
+
+
 
 
 //-----------------------------------------FOOTER--------------------------------//
@@ -180,7 +321,7 @@ a {
     padding: 30px 0;
 }
 .footer {
-
+    transition: all 0.3s ease;
     &__body {
     }
 
@@ -194,12 +335,29 @@ a {
     }
 
     &__logo {
+        transition: all 0.3s ease;
+        transform: rotate(90deg);
+        &:hover {
+            text-decoration: line-through;
+            transform: rotate(0deg);
+        }
         width: 80px;
-
+   
+        img {
+            max-width: 100%;
+            height: auto;
+           
+            
+        }
+    }
+    &__mygithub {
+        max-width: 100px;
+        max-height: 100px;
         img {
             max-width: 100%;
             height: auto;
         }
     }
 }
+
 
