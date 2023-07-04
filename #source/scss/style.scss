@@ -1,0 +1,204 @@
+// Файл обнуляющих стилей
+@import 'nullstyle.scss';
+
+// Подключение стилей
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+}
+
+[class*='__container'] {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+[class*='__subcontainer'] {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: calc(42/34*100%);
+    color: #070707;
+    margin-bottom: 10px;
+}
+ul {
+    li {
+        margin-bottom: 10px;
+    }
+}
+a {
+    color: #828282;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//-----------------------------------------HEADER--------------------------------//
+
+.header {
+
+    &__body {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    &__menu {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        a {
+            font-family: 'Gilroy-Bold';
+            font-size: 24px;
+            line-height: calc(42/34*100%);
+            color: #828282;
+        }
+        ::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #828282;
+        }
+    }
+}
+
+
+//-----------------------------------------MAIN--------------------------------//
+
+.main {
+    background-color: #F6F6F6;
+    padding: 50px 0;
+    &__body {
+    }
+}
+.body-main {
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        ::after {
+            content: '';
+            bottom: -20px;
+            left: 0;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #828282;
+        }
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        img {
+            max-width: 160px;
+            border-radius: 50%;
+        }
+    }
+
+    &__item {
+        flex: 50%;
+        margin-bottom: 20px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.intelligence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   &__name {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: calc(42/34*100%);
+    color: #070707;
+   }
+
+}
+
+.projects {
+
+    &__list {
+        a {
+            display: inline-block;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+
+//-----------------------------------------FOOTER--------------------------------//
+
+.fooler {
+    padding: 30px 0;
+}
+.footer {
+
+    &__body {
+    }
+
+    &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    &__text {
+    }
+
+    &__logo {
+        width: 80px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
